@@ -1,2 +1,2 @@
 #!/bin/bash
-cat /proc/sys/kernel/pid_max
+cat sysctl kernel/pid_max

@@ -5,7 +5,7 @@
 /* _strtok - function that tokenizes string
  * @str: pointer to string to be separated
  * @delim: delimiter to separate the string
- * Return: returns nothing (void)
+ * Return: returns null
  */
 void _strtok(const char *str, char delim)
 {
@@ -29,4 +29,12 @@ void _strtok(const char *str, char delim)
             word[j++] = str[i];
         }
     }
+}
+int main()
+{
+    const char *input = "This is a sample string";
+    char delim = ' ';
+    _strtok(input, delim);
+
+    return 0;
 }

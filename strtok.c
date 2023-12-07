@@ -11,7 +11,8 @@
 int main(void)
 {
 	char *lineptr = NULL;
-	char *delim = " \t\n", *str;
+	char delim = " \t\n";
+	     char *str;
 	ssize_t nread;
 	size_t n = 0;
 

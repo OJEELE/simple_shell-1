@@ -7,11 +7,11 @@ char *_getenv(const char *name)
 	
 	while (environ[i])
 	{
-		env_var =  strdup(environ[i]);
+		env_var =  _strdup(environ[i]);
 		token = strtok(env_var, "=");
-		if (strcmp(token, name) == 0)
+		if (_strcmp(token, name) == 0)
 		{
-			return (strdup(strtok(NULL, "=")));
+			return (_strdup(strtok(NULL, "=")));
 			free(env_var);
 		}
 		i++;

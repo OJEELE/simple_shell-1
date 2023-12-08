@@ -1,13 +1,11 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
+#include "main.h"
 
 /* _strtok - function that tokenizes string
  * @str: pointer to string to be separated
  * @delim: delimiter to separate the string
  * Return: returns null
  */
-void _strtok(const char *str, char delim)
+void _strtok(const char *str,  char delim)
 {
     int len = strlen(str);
     char word[len + 1];
